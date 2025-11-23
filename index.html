@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquid Glass Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Grotesk:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="glass-canvas" aria-hidden="true"></canvas>
+    <main class="clock-shell">
+      <div class="clock">
+        <p id="clock-display" data-time="00:00" aria-live="polite">00:00</p>
+      </div>
+    </main>
+
+    <button id="toggle-clock" aria-pressed="false">Hide clock</button>
+
+    <script src="shaders.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
